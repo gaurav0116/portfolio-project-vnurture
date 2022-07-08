@@ -1,0 +1,164 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*---------- Header ----------*/
+.header {
+  display: flex;
+  align-items: center;
+  height: 8em;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  margin-right: 1.5em;
+  display: flex;
+  list-style-type: none;
+}
+
+/* Active Nav list */
+.active {
+  text-decoration: underline;
+  color: #2978b5;
+}
+
+.navList-item {
+  margin-left: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+/*---------- Home Page ---------*/
+
+.mainHomePage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.mainHomePage h1 {
+  font-size: 4rem;
+}
+
+.name {
+  color: #2978b5;
+}
+.desc {
+  width: 600px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #2978b5;
+  font-weight: bold;
+  margin: auto 7px;
+}
+
+/* --------- Project Page ------------ */
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  gap: 10px 20px;
+  margin: 40px auto 40px auto;
+}
+
+/* ------------- Project- card --------- */
+
+.card {
+  margin: auto;
+  padding: 13px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 30px #ccc;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.skills {
+  padding: 6px 5px;
+  margin: 5px;
+  font-weight: 600;
+  box-shadow: 0px 0px 15px #ccc;
+}
+
+.skillContainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .icon {
+  margin-top: 20px;
+} */
+
+.projectLink {
+  margin: 10px;
+}
+
+/* ----------- Skills Page ------------ */
+
+.skills-cards {
+  margin: 30px auto;
+}
+
+/* --------- Footer Componenet ------- */
+
+.footer p {
+  margin: 20px auto;
+  padding: 20px 0px;
+  background-color: #80808042;
+}
+
+/*-------------------------------- 
+--------- Responsive -------------
+---------------------------------*/
+
+@media only screen and (max-width: 400px) {
+  /* App  */
+  .App {
+    width: 400px;
+    /* position: fixed; */
+    text-align: center;
+  }
+
+  /* header */
+  .header {
+    margin: -15px auto;
+  }
+
+  /* Home  */
+  .mainHomePage h1 {
+    font-size: 2.2rem;
+  }
+
+  .profeesion {
+    font-size: 1.2rem;
+    margin-right: auto;
+  }
+
+  .desc {
+    width: 360px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  /* Project */
+  .card {
+    margin: 10px auto;
+  }
+}
